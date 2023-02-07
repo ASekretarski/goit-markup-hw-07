@@ -41,10 +41,7 @@
 
 
 
-.about .heading {
-    font-size: 14px;
-    line-height: 1.14;
-}
+
 
 .what-we-do .heading {
     font-size: 36px;
@@ -68,11 +65,7 @@
     line-height: 2;
 }
 
-.about .txt-gray {
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--secondary-text-color);
-}
+
 
 .our-team .txt-gray {
     line-height: 1.19;
@@ -173,14 +166,7 @@
 
 }
 
-.about .heading {
-    margin-bottom: 10px;
-}
 
-.about .flex {
-    justify-content: space-between;
-    gap: 30px;
-}
 
 .what-we-do.section {
     padding-top: 0px;
