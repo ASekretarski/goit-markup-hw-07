@@ -1,3 +1,8 @@
+body {
+    font-family: Roboto, sans-serif;
+    color: $primary-text-color;
+}
+
 p {
     margin: 0px;
 }
@@ -11,11 +16,6 @@ p {
 .flex {
     display: flex;
     padding: 0px;
-}
-
-body {
-    font-family: Roboto, sans-serif;
-    color: $primary-text-color;
 }
 
 .link {

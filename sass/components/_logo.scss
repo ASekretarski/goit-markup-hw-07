@@ -21,9 +21,12 @@
 
 
 
-   &__second-part--light-themed,
-   &__second-part--light-themed:visited {
+   &__second-part--light-themed {
       color: $tertiary-text-color;
+
+      &:visited {
+        color: $tertiary-text-color;
+      }
     }
 }
 
