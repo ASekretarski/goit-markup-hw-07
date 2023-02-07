@@ -43,10 +43,7 @@
 
 
 
-.what-we-do .heading {
-    font-size: 36px;
-    line-height: 1.17;
-}
+
 
 .our-team .heading,
 .our-clients .heading {
@@ -168,18 +165,7 @@
 
 
 
-.what-we-do.section {
-    padding-top: 0px;
-}
 
-.what-we-do .flex,
-.our-team .flex {
-    justify-content: space-between;
-}
-
-.what-we-do .heading {
-    margin-bottom: 50px;
-}
 
 .our-team .heading {
     margin-bottom: 50px;
@@ -336,23 +322,7 @@
     display: block;
 }
 
-.what-we-do .thumb {
-    position: relative;
-}
 
-.what-we-do .label {
-    position: absolute;
-    margin: 0px;
-    padding: 27px 0px;
-    width: 100%;
-    text-align: center;
-    font-weight: 700;
-    font-size: 14px;
-    color: var(--tertiary-text-color);
-    background: rgba(47, 48, 58, 0.8);
-    bottom: 0px;
-    letter-spacing: 0.03em;
-}
 
 .example-card .box{
     position: relative;
