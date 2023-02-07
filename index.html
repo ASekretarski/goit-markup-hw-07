@@ -379,15 +379,19 @@
             >
           </a>
           <address class="footer__address">
-            <ul class="footer__address-list list">
-              <li class="list__item">m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li class="list__item">
-                <a class="list__link" href="mailto:info@devstudio.com"
+            <ul class="footer__address-list address-list list">
+              <li class="address-list__item">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </li>
+              <li class="address-list__item">
+                <a
+                  class="address-list__link link"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="list__item">
-                <a class="list__link" href="tel:+48111111111"
+              <li class="address-list__item">
+                <a class="address-list__link link" href="tel:+48111111111"
                   >+48 111 111 111</a
                 >
               </li>
@@ -395,46 +399,39 @@
           </address>
         </div>
         <div class="footer__socials socials">
-          <h2 class="heading">DOŁĄCZ DO NAS</h2>
-          <div class="flex">
-            <a
-              class="socials__icon-space socials__icon-space--dark-themed"
-              href=""
-              ><svg class="socials__icon" width="20px" height="20px">
+          <h2 class="socials__heading">DOŁĄCZ DO NAS</h2>
+          <div class="footer__socials-icons flex">
+            <a class="socials__icon-space" href=""
+              ><svg class="socials__icon icon" width="20px" height="20px">
                 <use href="./images/icons.svg#icon-instagram"></use></svg></a
-            ><a
-              class="socials__icon-space socials__icon-space--dark-themed"
-              href=""
-              ><svg class="socials__icon" width="20px" height="20px">
+            ><a class="socials__icon-space" href=""
+              ><svg class="socials__icon icon" width="20px" height="20px">
                 <use href="./images/icons.svg#icon-twitter"></use></svg></a
-            ><a
-              class="socials__icon-space socials__icon-space--dark-themed"
-              href=""
-              ><svg class="socials__icon" width="20px" height="20px">
+            ><a class="socials__icon-space" href=""
+              ><svg class="socials__icon icon" width="20px" height="20px">
                 <use href="./images/icons.svg#icon-facebook"></use></svg></a
-            ><a
-              class="socials__icon-space socials__icon-space--dark-themed"
-              href=""
-              ><svg class="socials__icon" width="20px" height="20px">
+            ><a class="socials__icon-space" href=""
+              ><svg class="socials__icon icon" width="20px" height="20px">
                 <use href="./images/icons.svg#icon-linkedin"></use></svg
             ></a>
           </div>
         </div>
+
         <div class="newsletter">
           <form
-            class="newsletter__form form"
+            class="newsletter__newsletter-form newsletter-form"
             name="newsletterForm"
             autocomplete="on"
           >
-            <div class="form__heading">
-              <label class="form__label" for="newsletterEmail">
+            <div class="newsletter-form__heading">
+              <label class="newsletter-form__label" for="newsletterEmail">
                 ZAPISZ SIĘ DO NEWSLETTERA
               </label>
             </div>
 
-            <div class="form__input">
+            <div class="newsletter-form__input">
               <input
-                class="newsletter-input"
+                class="newsletter-form__email-input"
                 type="email"
                 name="email"
                 id="newsletterEmail"
@@ -442,7 +439,7 @@
                 autocomplete="on"
                 placeholder="E-mail"
               />
-              <button class="form__button button" type="sumbit">
+              <button class="newsletter-form__button button" type="sumbit">
                 <div>Zapisz się</div>
                 <svg class="button__icon icon" width="24px" height="24px">
                   <use href="./images/icons.svg#icon-send"></use>
