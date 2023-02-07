@@ -1,5 +1,5 @@
 .header {
-    border-bottom: 1px solid var(--tertiary-bgrd-color);
+    border-bottom: 1px solid $tertiary-bgrd-color;
     padding: 24px 0px;
 
     & .flex {
@@ -8,40 +8,86 @@
     }
 }
 
-
-.list__nav-link--active {
-    color: var(--primary-brand-color);
-    display: block;
-    position: relative;
+.nav-menu__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 46px;
 }
 
-.list__nav-link--active::after {
+.list__nav-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: $primary-brand-color;
+    }
+}
+
+.nav-menu .list__nav-link--active {
+    color: $primary-brand-color;
+    display: block;
+    position: relative;
+
+    &::after {
     content: "";
     display: inline-block;
     width: 100%;
     height: 4px;
-    background-color: var(--primary-brand-color);
-    border: 2px solid var(--primary-brand-color);
+    background-color: $primary-brand-color;
+    border: 2px solid $primary-brand-color;
     border-radius: 2px;
     position: absolute;
     top: 44px;
     left: 0px;
 }
+}
+
+.contacts {
+    
+    &__list {
+        display:flex;
+        padding: 0;
+        margin: 0;
+        gap: 50px;
+       
+    }
+
+    &__link {
+        display: flex;
+        color: $secondary-text-color;
+        fill: $secondary-text-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: $primary-brand-color;
+            fill: $primary-brand-color;
+        }
+        
+    }
+
+    &__icon {
+        margin-right: 10px;
+    }
+}
+
+
 
 .nav-menu {
     flex: 1;
 }
 
-.nav-menu .list__item {
-    display: block;
-}
+// .nav-menu .list__item {
+//     display: block;
+// }
 
-.nav-menu .flex {
-    gap: 46px;
-}
+// .nav-menu .flex {
+//     gap: 46px;
+// }
 
-/* contacts */
+// /* contacts */
 
-.contacts__link {
-    color: var(--secondary-text-color);
-}
+// .contacts__link {
+//     color: var(--secondary-text-color);
+// }

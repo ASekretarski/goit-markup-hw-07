@@ -440,57 +440,61 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="modal__button button" class="close-btn" data-modal-close>
+        <button type="button" class="modal__close-btn" data-modal-close>
           <svg class="button__icon icon" width="18px" height="18px">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
         </button>
 
-        <form class="modal__form" name="userRequestForm" autocomplete="on">
+        <form
+          class="modal__request-form request-form"
+          name="userRequestForm"
+          autocomplete="on"
+        >
           <div class="box" role="group" aria-labelledby="user-request-form">
             <p id="user-request-form" class="request-form__heading">
               Zostaw swoje dane w formularzu poniżej
             </p>
-            <label class="form__label">
+            <label class="request-form__label">
               Imię
               <input
-                class="form__data-input"
+                class="request-form__data-input"
                 type="text"
                 name="userName"
                 required
               />
-              <svg class="form__icon" width="18px" height="18px">
+              <svg class="request-form__icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </label>
-            <label class="form__label">
+            <label class="request-form__label">
               Telefon
               <input
-                class="form__data-input"
+                class="request-form__data-input"
                 type="tel"
                 name="userPhoneNumber"
                 required
               />
-              <svg class="form__icon" width="18px" height="18px">
+              <svg class="request-form__icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </label>
-            <label class="form__label">
+            <label class="request-form__label">
               Email
               <input
-                class="form__data-input"
+                class="request-form__data-input"
                 type="email"
                 name="userEmail"
                 required
               />
-              <svg class="form__icon" width="18px" height="18px">
+              <svg class="request-form__icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </label>
-            <label class="form__label">
+            <label class="request-form__label">
               Komentarz
               <textarea
-                class="form__comment-input"
+                class="request-form__comment-input"
                 name="userRequest"
                 rows="6"
                 placeholder="Wprowadź tekst"
@@ -498,27 +502,33 @@
                 minlength="5"
               ></textarea>
             </label>
-            <label class="form__terms-label">
+            <label class="request-form__terms-label">
               <input
-                class="form__terms-input"
+                class="request-form__terms-input"
                 type="checkbox"
                 name="termsAccepted"
                 value="true"
                 required
               />
 
-              <svg class="form__icon-check" width="11px" height="8px">
+              <svg class="request-form__icon-check" width="11px" height="8px">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
-              <svg class="form__icon-not-check" width="16px" height="15px">
+              <svg
+                class="request-form__icon-not-check"
+                width="16px"
+                height="15px"
+              >
                 <use href="./images/icons.svg#icon-not-check"></use>
               </svg>
               Oświadczam iż akceptuję
-              <a class="form__link" href="">Regulamin</a> i
-              <a class="form__link" href="">Politykę Prywatności.</a>
+              <a class="request-form__link" href="">Regulamin</a> i
+              <a class="request-form__link" href="">Politykę Prywatności.</a>
             </label>
           </div>
-          <button class="form__button button" type="submit">Wyślij</button>
+          <button class="request-form__button button" type="submit">
+            Wyślij
+          </button>
         </form>
       </div>
     </div>
