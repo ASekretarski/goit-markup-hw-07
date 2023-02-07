@@ -39,12 +39,7 @@
 
 /* font styles and colors */
 
-.headline .heading {
-    font-size: 44px;
-    line-height: 1.36;
-    font-weight: 900;
-    color: var(--tertiary-text-color);
-}
+
 
 .about .heading {
     font-size: 14px;
@@ -89,9 +84,7 @@
     color: var(--secondary-text-color);
 }
 
-.headline .heading {
-    letter-spacing: 0.06em;
-}
+
 
 .footer .heading {
     font-size: 14px;
@@ -106,13 +99,7 @@
 
 /* background colors */
 
-.headline {
-    background-color: var(--primary-bgrd-color);
-    background-image: url('../images/headline-background-image.jpg'), linear-gradient(to bottom, #662F303A, #662F303A);
-    background-size: 1600px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 
 .our-team {
     background-color: var(--secondary-bgrd-color);
@@ -183,14 +170,7 @@
     display: block;
 }
 
-.headline .container {
-    padding: 106px 252px 106px 252px;
-}
 
-.headline .button {
-    margin-top: 30px;
-    padding: 10px 41px 10px 42px;
-    border-radius: 4px;
 }
 
 .about .heading {
